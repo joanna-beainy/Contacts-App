@@ -7,19 +7,19 @@ export default function ContactsList() {
   const filtered = filteredContacts();
 
   return (
-    <div className="flex flex-col gap-3">
-        <div className="mb-6 flex gap-4 items-center justify-between">
+    <div className="flex flex-col gap-3 mx-auto max-w-4xl">
+        <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
+            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-sky-700 text-white shadow-sm">
               <i className="fa-solid fa-phone"></i>
             </div>
             <div>
-              <h1 className="text-xl font-semibold">Contacts</h1>
+              <h1 className="text-xl font-semibold tracking-[0.1em] uppercase">Contacts</h1>
             </div>
           </div>
           <button 
-             onClick={() => setIsPopupOpen(true)}
-            className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50">
+            onClick={() => setIsPopupOpen(true)}
+            className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm transition hover:bg-slate-50" >
             <i className="fa-solid fa-plus"></i> New Contact
           </button>
         </div>
